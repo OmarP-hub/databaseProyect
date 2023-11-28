@@ -1,0 +1,32 @@
+= NOTAS =
+* [[Gradle]]
+* [[Bases de datos]]
+* [[GUI]]
+
+= DESCRIPCION =
+
+* Interfaz gráfica para manejar un inventario
+* El "backend" consiste de 3 cosas
+  * Interfaz gráfica
+    * Hecha con la librería swing de java
+    * Consiste de 2 vistas diferentes:
+      * Entrada de datos: Provee una interfaz gráfica para añadir los datos de una nueva pieza
+      * Vista de datos: Provee una vista de tabla para observar las diferentes piezas y la
+        respectiva información de cada una
+  * Base de datos SQL
+    * Maneja el inventario de piezas:
+      * Permite añadir, editar, leer, y borrar la información de cada pieza (CRUD)
+      * Cada pieza cuenta con la siguiente información:
+        * Nombre (Nombre descriptivo de la pieza)
+        * Folio
+        * Precio ($MXN)
+        * Proveedor (Nombre del proveedor: Apellido, Nombre)
+        * Correo del proveedor
+        * Fecha de entrega (DD/MM/YYYY)
+  * API de correo
+    * Se encarga de automatizar el proceso de enviar un correo al proveedor cuando:
+      * Ya es el día de entrega de una pieza, y no ha llegado después de las 9am
+      * Si el siguiente día después de las 9am sigue sin llegar, se volverá a enviar un correo,
+        y así sucesivamente, hasta que llegue.
+      * Funciona de la siguiente manera:
+        * ...

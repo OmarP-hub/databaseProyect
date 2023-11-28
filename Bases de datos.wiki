@@ -1,0 +1,7 @@
+= Basicos = 
+
+*¿Como funcionan?*
+  * La manera normal en la que guardamos datos normalmente es como en una tabla de excel
+    * De esta forma lo que hacemos es que cada fila es una entrada a la base de datos,
+    * adasdf
+  * Pero las bases de datos relaciones (SQL) no funcionan así
